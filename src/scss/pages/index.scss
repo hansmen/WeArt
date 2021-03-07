@@ -1,0 +1,81 @@
+header, body {
+  color: #181819;
+}
+
+.page-body {
+  &__menu {
+    label:hover {
+      color: #9094A6;
+    }
+  }
+
+  .intro-video__pause {
+    background: url("../img/pause.svg");
+    background-color: transparent;
+    width: 30px;
+    height: 32px;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+  }
+
+  .intro-video__start {
+    background: url("../img/start.svg");
+    background-color: transparent;
+    width: 30px;
+    height: 32px;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    display: none;
+  }
+
+  .content-projects {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    @media (max-width: 576px) {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    .content-project {
+      margin-bottom: 60px;
+      @media (max-width: 576px) {
+        margin-bottom: 30px;
+      }
+      img:hover{
+        //opacity: 80%;
+      }
+    }
+  }
+
+  .content-project__img {
+    z-index: 999;
+    &:hover{
+      background: rgba(24, 24, 25, 0.2);
+    }
+  }
+
+  &__about {
+    background: #FBFBFB;
+    &-more:hover {
+      border: transparent;
+      padding-bottom: 1px;
+    }
+    label {
+      font-size: 15px;
+    }
+  }
+
+  &__content-title {
+    &::before{
+      content: "•"; color: #181819;
+      display: inline-block; width: 1em;
+      padding-right: 30px;
+    }
+    &::after{
+      content: "•"; color: #181819;
+      display: inline-block; width: 1em;
+      padding-left: 30px;
+    }
+  }
+}

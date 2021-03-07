@@ -1,0 +1,205 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+}
+
+html,
+body {
+	min-height: 100%;
+
+	&.is-scroll-none {
+		overflow: hidden;
+		height: 100%;
+
+		body {
+			overflow: hidden;
+			height: 100%;
+		}
+	}
+}
+
+// * {
+// 	-webkit-user-select: none;  /* Chrome all / Safari all */
+//   -moz-user-select: none;     /* Firefox all */
+//   -ms-user-select: none;      /* IE 10+ */
+//   user-select: none;          /* Likely future */      
+// }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+html {
+	-webkit-overflow-scrolling: touch;
+}
+
+body {
+	font-size: $body-font-size;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: $text-color;
+	font-weight: 500;
+	font-size: $body-font-size;
+	line-height: 1.2;
+	min-width: 320px;
+	background: #FFF;
+
+	&.js-block-scroll {
+		overflow-y: hidden;
+	}
+}
+
+th {
+	font-weight: inherit;
+}
+
+// font default
+//-----------------------------------------------------------------------------------
+body,
+input,
+button,
+select,
+textarea {
+	font-family: $Gilroy, $Montserrat, $font-default
+}
+
+li {
+	list-style-type: none;
+}
+
+// Common classes
+//-----------------------------------------------------------------------------------
+.clear {
+	clear: both;
+}
+
+%clear-fix:after {
+	content: "";
+	clear: both;
+	display: table;
+	width: 100%;
+}
+
+// text align
+//-----------------------------------------------------------------------------------
+.text {
+	&-left {
+		text-align: left;
+	}
+
+	&-center {
+		text-align: center;
+	}
+
+	&-right {
+		text-align: right;
+	}
+}
+
+pre,
+code {
+	font-family: monospace;
+}
+
+a {
+	display: inline-block;
+	outline: none;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+img {
+	position: relative;
+	display: inline-block;
+	border: none;
+	vertical-align: top;
+	max-width: 100%;
+	height: auto;
+	font: 300 12px / 1 $font-default;
+	text-align: center;
+
+	&:after {
+		content: "Broken Image of "attr(alt);
+		display: block;
+		color: rgb(100, 100, 100);
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #fff;
+	}
+}
+
+svg {
+	pointer-events: all;
+}
+
+// form
+//-----------------------------------------------------------------------------------
+input,
+textarea {
+	appearance: none;
+	box-shadow: none;
+}
+
+textarea {
+	resize: none;
+}
+
+input {
+	vertical-align: middle;
+	margin: 0;
+	padding: 0;
+
+	::-ms-clear,
+	::-ms-reveal {
+		display: none;
+		width: 0;
+		height: 0;
+	}
+
+	&[type="search"] {
+
+		&::-webkit-search-decoration,
+		&::-webkit-search-cancel-button,
+		&::-webkit-search-results-button,
+		&::-webkit-search-results-decoration {
+			display: none;
+		}
+	}
+}
+
+button,
+input[type='reset'],
+input[type='submit'],
+input[type='button'],
+input[type='image'] {
+	display: inline-block;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	overflow: visible;
+	background: none;
+	outline: 0;
+	border: 0;
+	cursor: pointer;
+	vertical-align: middle;
+	text-align: center;
+}
+
+label {
+	cursor: pointer;
+}

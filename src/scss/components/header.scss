@@ -1,0 +1,31 @@
+// header
+//-----------------------------------------------------------------------------------
+.header {
+
+  .header-part {
+    &__social {
+      svg:hover {
+        * {
+          fill: #9094A6;
+        }
+      }
+    }
+    &__lang {
+      label {
+        color: #9999A0;
+        &:hover {
+          color: #181819;
+          &::before {
+            content: "•";
+            color: #181819;
+            display: inline-block;
+            width: 1em;
+            position: absolute;
+            top: -10px;
+            margin-left: 8px;
+          }
+        }
+      }
+    }
+  }
+}

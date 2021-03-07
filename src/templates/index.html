@@ -1,0 +1,119 @@
+@@include('../chunks/head.html')
+
+<body>
+	<div class="page-wrapper">
+		@@include('../chunks/header.html')
+
+		<main class="page-body border border-t page-body__border">
+			<div class="page-body__menu container my-5">
+				<div class="page-body__menu-titles w-full flex flex-wrap justify-between border-t-2 border-fuchsia-600 uppercase text-xs text-center">
+					<label class="w-1/2 md:w-auto p-2 md:p-0">о студии</label>
+					<p class="hidden md:block">•</p>
+					<label class="w-1/2 md:w-auto p-2 md:p-0">портфолио</label>
+					<p class="hidden md:block">•</p>
+					<label class="w-1/2 md:w-auto p-2 md:p-0">этапы роботы</label>
+					<p class="hidden md:block">•</p>
+					<label class="w-1/2 md:w-auto p-2 md:p-0">стоимость</label>
+					<p class="hidden md:block">•</p>
+					<label class="w-1/2 md:w-auto p-2 md:p-0">эко-материалы</label>
+					<p class="hidden md:block">•</p>
+					<label class="w-1/2 md:w-auto p-2 md:p-0">контакты</label>
+				</div>
+			</div>
+			<div class="page-body__intro">
+<!--				<img src="img/intro.png" class="w-full">-->
+				<div id="video" class="relative">
+					<video autoplay loop muted height="500px" width="100%" class="page-body__intro-video" src="https://res.cloudinary.com/jr-cologne-de/video/upload/bgvideo.mp4"></video>
+					<button class="intro-video__pause" onclick="pauseVideo()"></button>
+					<button class="intro-video__start" onclick="playVideo()"></button>
+				</div>
+			</div>
+			<div class="page-body__content container">
+				<h2 class="page-body__content-title text-3xl mt-16 font-normal text-center">Новые проекты</h2>
+				<div class="content-projects flex flex-wrap">
+					<div class="content-project flex flex-col w-full md:w-1/3 items-center px-4">
+						<div class="content-project__img relative">
+							<p class="content-project__img absolute w-full h-full"></p>
+							<img src="img/proj1.png">
+						</div>
+						<label class="mt-5">Котедж Первый парковый</label>
+					</div>
+					<div class="content-project flex flex-col w-full md:w-1/3 items-center px-4">
+						<div class="content-project__img relative">
+							<p class="content-project__img absolute w-full h-full"></p>
+							<img src="img/proj2.png">
+						</div>
+						<label class="mt-5">Квартира ЖК Риверстоун</label>
+					</div>
+					<div class="content-project flex flex-col w-full md:w-1/3 items-center px-4">
+						<div class="content-project__img relative">
+							<p class="content-project__img absolute w-full h-full"></p>
+							<img src="img/proj3.png">
+						</div>
+						<label class="mt-5">Дом Грузевица-3</label>
+					</div>
+					<div class="content-project flex flex-col w-full md:w-1/3 items-center px-4">
+						<div class="content-project__img relative">
+							<p class="content-project__img absolute w-full h-full"></p>
+							<img src="img/proj4.png">
+						</div>
+						<label class="mt-5">Дом по улице Летняя</label>
+					</div>
+					<div class="content-project flex flex-col w-full md:w-1/3 items-center px-4">
+						<div class="content-project__img relative">
+							<p class="content-project__img absolute w-full h-full"></p>
+							<img src="img/proj5.png">
+						</div>
+						<label class="mt-5">Дом по улице Летняя</label>
+					</div>
+					<div class="content-project flex flex-col w-full md:w-1/3 items-center px-4">
+						<div class="content-project__img relative">
+							<p class="content-project__img absolute w-full h-full"></p>
+							<img src="img/proj6.png">
+						</div>
+						<label class="mt-5">Магазин SEW TECH</label>
+					</div>
+					<div class="content-project flex flex-col w-full md:w-1/3 items-center px-4">
+						<div class="content-project__img relative">
+							<p class="content-project__img absolute w-full h-full"></p>
+							<img src="img/proj7.png">
+						</div>
+						<label class="mt-5">Апартаменты</label>
+					</div>
+					<div class="content-project flex flex-col w-full md:w-1/3 items-center px-4">
+						<div class="content-project__img relative">
+							<p class="content-project__img absolute w-full h-full"></p>
+							<img src="img/proj8.png">
+						</div>
+						<label class="mt-5">Бутик Mix</label>
+					</div>
+					<div class="content-project flex flex-col w-full md:w-1/3 items-center px-4">
+						<div class="content-project__img relative">
+							<p class="content-project__img absolute w-full h-full"></p>
+							<img src="img/proj9.png">
+						</div>
+						<label class="mt-5">Загородный дом</label>
+					</div>
+				</div>
+			</div>
+			<div class="page-body__about md:pt-16 w-full">
+				<div class="container flex justify-center">
+					<div class="w-full md:w-3/5">
+						<h3 class="text-3xl font-normal text-center">Заказать дизайн интерьера в Хмельницком для своего дома!</h3>
+						<label class="pt-8 block font-normal">Дом для каждого из нас – это место, где мы чувствуем уют и покой, обретаем душевное равновесие, куда мы все спешим после тяжелого рабочего дня, и где хотим спрятаться от городской суматохи. И, конечно, у каждого есть дом мечты, который, наверное, был придуман и визуализирован еще в детстве или же, наоборот, есть мечта, но нет четкого представления как он будет выглядеть. Команда We-ART с радостью поможет Вам выполнить абсолютно любой дизайн интерьера Хмельницкий.</label>
+						<label class="pt-8 block font-normal">За время работы команда дизайн студии интерьера в Хмельницком We-ART накопила достаточно знаний и навыков, чтобы удовлетворить вкусы любого клиента, а также выполнила десятки проектов, в том числе и для представителей своей сферы. Каждый клиент уникален, и каждый ставит свои приоритеты – для кого-то это время, для кого-то цена. Для команды We-ART в приоритете же качество выполнения задач и пожелания клиента, поэтому про нашу компанию за все время работы отзывались только с хорошей стороны.</label>
+						<div class="page-body__about-button w-full flex justify-center">
+							<a href="#" class="page-body__about-more text-center uppercase font-normal my-10 text-sm border-b border-dotted ">Читать больше</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		@@include('../chunks/footer.html')
+	</div>
+	<!-- scripts -->
+	@@include('../chunks/scripts.html')
+</body>
+
+</html>

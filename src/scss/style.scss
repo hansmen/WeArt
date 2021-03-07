@@ -1,0 +1,24 @@
+$root: "/";
+// $root : "/";
+// import standards
+//-----------------------------------------------------------------------------------
+@import "standards/mixins.scss";
+@import "standards/variables.scss";
+@import "standards/reset.scss";
+@import "standards/media.scss";
+@import "standards/grid.scss";
+@import "standards/common.scss";
+// import plugins
+//-----------------------------------------------------------------------------------
+@import "plugins/slider.scss";
+@import "plugins/dots.scss";
+// import components
+//-----------------------------------------------------------------------------------
+@import "components/page.scss";
+@import "components/btn.scss";
+@import "components/header.scss";
+@import "components/footer.scss";
+@import "components/sizing.scss";
+// import pages
+//-----------------------------------------------------------------------------------
+@import "pages/index.scss";

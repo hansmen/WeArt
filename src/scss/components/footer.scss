@@ -1,0 +1,21 @@
+footer {
+  background: #24262D;
+  color: #C9CBD0;
+  .footer-policy {
+    p::before{
+      content: "•"; color: #C9CBD0;
+      display: inline-block; width: 1em;
+      padding-right: 30px;
+    }
+    p::after{
+      content: "•"; color: #C9CBD0;
+      display: inline-block; width: 1em;
+      padding-left: 30px;
+    }
+  }
+  svg:hover {
+    * {
+      fill: #9094A6;
+    }
+  }
+}
